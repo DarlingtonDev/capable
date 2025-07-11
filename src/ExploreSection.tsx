@@ -122,7 +122,7 @@ const ExploreSection = () => {
             </div>
           </div>
           <div className="w-full h-dvh mt-3 px-3">
-            <div className="w-full rounded-3xl border-b border-gray-200 h-dvh bg-[url('hiking.webp')] bg-top bg-contain relative"></div>
+            <div className="w-full rounded-3xl border-b border-gray-200 h-dvh bg-[url('/hiking.webp')] bg-top bg-contain relative"></div>
           </div>
         </div>
       </div>
