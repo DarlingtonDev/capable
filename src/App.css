@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@layer base {
+  @font-face {
+    font-family: "Noto Sans Sunuwar" sans-serif;
+    src: url("/public/fonts/NotoSansSunuwar-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Rubik", sans-serif;
+    src: url("/public/fonts/Rubik-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Rubik", sans-serif;
+    src: url("/public/fonts/Rubik-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Rubik", sans-serif;
+    src: url("/public/fonts/Rubik-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url("/public/fonts/Montserrat-VariableFont_wght.ttf")
+      format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+@theme {
+  --color-primary: #7d3ac8;
+  --font-sora: "Noto Sans Sunuwar", sans-serif;
+  --font-rubik: "Rubik", sans-serif;
+  --font-mons: "Montserrat", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-work-sans: "Work Sans", sans-serif;
+}
+
+@layer utilities {
+  @keyframes scroll-x {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes scroll-2x {
+    0% {
+      transform: translateX(-50%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll-x 20s linear infinite;
+  }
+  .animate-rtl {
+    animation: scroll-2x 20s linear infinite;
+  }
+}
